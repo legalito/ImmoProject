@@ -13,5 +13,9 @@
     "nuxt": "^3.10.1",
     "vue": "^3.4.15",
     "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.41.2",
+    "@types/node": "^20.11.18"
   }
 }
