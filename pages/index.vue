@@ -6,7 +6,7 @@
        <div>
          <h2>Titre</h2>
          <p>description</p>
-         <button>détails</button>
+         <button id="button">détails</button>
        </div>
        <div>
          <h2>Titre</h2>
@@ -16,12 +16,12 @@
        <div>
          <h2>Titre</h2>
          <p>description</p>
-         <button>détails</button>
+         <button id="button">détails</button>
        </div>
        <div>
          <h2>Titre</h2>
          <p>description</p>
-         <button>détails</button>
+         <button id="button">détails</button>
        </div>
     </div>
   </template>

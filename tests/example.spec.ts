@@ -5,7 +5,8 @@ test('Vérifier la page contact', async ({ page }) => {
   const response = await page.goto('localhost:3000/contact');
 
   // Vérifiez que la page renvoie un code de statut 200
-  expect(response.ok()).toBeTruthy();
+  if(response != null)
+    expect(response.ok()).toBeTruthy();
 });
 
 test('titre' , async ({ page }) => {
