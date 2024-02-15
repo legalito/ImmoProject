@@ -37,3 +37,4 @@ test('formulaire soumission' , async ({ page }) => {
   // Vérifiez que le formulaire a été soumis
   const form = await page.waitForSelector('form');
 });
+
