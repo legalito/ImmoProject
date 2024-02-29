@@ -3,10 +3,10 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   push:
     branches:
-      - main
+      - tryTest
   pull_request:
     branches:
-      - main
+      - tryTest
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
