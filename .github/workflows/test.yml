@@ -12,12 +12,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Use Node.js
+      
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20.x' 
-      - run: npm install
-      - run: npm install vitest
-      - run: npx playwright install
-      - run: npm run test
-
+          node-version: '20.x'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Setup Playwright
+        run: npx playwright install
+      
+      - name: Run tests
+        run: npm run test
